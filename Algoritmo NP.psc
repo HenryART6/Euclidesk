@@ -10,7 +10,7 @@ Algoritmo numeros_perfectos
 			FinSi
 		FinPara
 		Si suma=num Entonces
-			Escribir num Sin Saltar
+			Escribir num
 		FinSi
 		num = num+1
 		suma = 0
