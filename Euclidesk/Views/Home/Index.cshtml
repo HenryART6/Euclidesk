@@ -12,18 +12,19 @@
     <form action="/Home/Index" method="post">
         <div class="col-md-3 form-horizontal">
             <br />
-            <input type="number" class="form-control" name="pNum" placeholder="primer numero" required autofocus>
+            <input type="number" class="form-control" name="pNum" placeholder="Primer numero" required autofocus>
             <br />
-            <input type="number" class="form-control" name="sNum" placeholder="segundo numero" required>
+            <input type="number" class="form-control" name="sNum" placeholder="Segundo numero" required>
             <br />
             <button class="btn btn-primary" type="submit">
-                Sumar
+                Analizar
             </button>
         </div>
         <div class="col-md-3 form-horizontal">
             <br />
-            <p><a href="https://asp.net" class="btn btn-primary btn-lg"><b>@ViewData["suma"]</b></a></p>
-            
+            <b>@ViewData["perfecto_0"]</b>
+            <b>@ViewData["perfecto_1"]</b>
+            <b>@ViewData["perfecto_2"]</b>
 
         </div>
     </form>
