@@ -1,32 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Web.Mvc;
 
 namespace Euclidesk.Controllers
-
 {
-
     public class HomeController : Controller
     {
-
         public ActionResult Index(string pNum, string sNum)
         {
-            int[] perfecto = new int[100];
-           
+            int[] perfecto = new int[49];
             if (pNum != null && sNum != null)
             {
-
                 int num = int.Parse(pNum);
                 int num2 = int.Parse(sNum);
-                
                 int suma = 0;
                 int acum = 0;
                 int res;
-
                 while (num <= num2)
                 {
                     for (int i = 1; i <= num - 1; i++)
@@ -39,9 +26,9 @@ namespace Euclidesk.Controllers
                     }
                     if (suma == num)
                     {
-                        for (int j = acum; j < acum+1; j++)
+                        for (int j = acum; j < acum + 1; j++)
                         {
-                            perfecto[j] = num; 
+                            perfecto[j] = num;
                         }
                         acum++;
                     }
@@ -50,25 +37,37 @@ namespace Euclidesk.Controllers
                 }
             }
 
-            ViewData["perfecto_0"] = perfecto[0];
-            ViewData["perfecto_1"] = perfecto[1];
-            ViewData["perfecto_2"] = perfecto[2];
+            if (perfecto[0] != 0)
+            {
+                ViewData["mensage"] = "Los numeros perfectos encontrados entre " + pNum + " y " + sNum + " son:";
+                ViewData["perfecto_0"] = perfecto[0];
+            }
+            if (perfecto[1] != 0)
+            {
+                ViewData["perfecto_1"] = perfecto[1];
+            }
+            if (perfecto[2] != 0)
+            {
+                ViewData["perfecto_2"] = perfecto[2];
+            }
+            if (perfecto[3] != 0)
+            {
+                ViewData["perfecto_3"] = perfecto[3];
+            }
+            if (perfecto[4] != 0)
+            {
+                ViewData["perfecto_4"] = perfecto[4];
+            }
+            int comp = 0;
+            ViewData["comp"] = comp;
 
-            return View("Index");
+            return View(perfecto);
         }
 
-        public ActionResult About()
+        public ActionResult Print()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return new Rotativa.ActionAsPdf("Index")
+            { FileName = "txt.pdf" };
         }
     }
 }

@@ -3,29 +3,40 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
+    <h1>Euclidesk</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
+    <div class="col-md-3 form-horizontal"></div>
     <form action="/Home/Index" method="post">
         <div class="col-md-3 form-horizontal">
             <br />
-            <input type="number" class="form-control" name="pNum" placeholder="Primer numero" required autofocus>
+            <h5>Digite el rango de numeros que desea analizar</h5>
+            <input type="number" class="form-control" name="pNum" placeholder="Desde" required autofocus>
             <br />
-            <input type="number" class="form-control" name="sNum" placeholder="Segundo numero" required>
+            <input type="number" class="form-control" name="sNum" placeholder="Hasta" required>
             <br />
             <button class="btn btn-primary" type="submit">
                 Analizar
             </button>
+            <!--  funcion Imprimir en .pdf sin implementar
+            <a href="Print" class="btn btn-success">Imprimir pantalla</a>-->
         </div>
         <div class="col-md-3 form-horizontal">
             <br />
-            <b>@ViewData["perfecto_0"]</b>
-            <b>@ViewData["perfecto_1"]</b>
-            <b>@ViewData["perfecto_2"]</b>
-
+            <h5>@ViewData["mensage"]</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>@ViewData["perfecto_0"]</b></li>
+                <li class="list-group-item"><b>@ViewData["perfecto_1"]</b></li>
+                <li class="list-group-item"><b>@ViewData["perfecto_2"]</b></li>
+                <li class="list-group-item"><b>@ViewData["perfecto_3"]</b></li>
+                <li class="list-group-item"><b>@ViewData["perfecto_4"]</b></li>
+            </ul>
+           
+        </div>
+        <div class="col-md-3 form-horizontal">
         </div>
     </form>
 </div>

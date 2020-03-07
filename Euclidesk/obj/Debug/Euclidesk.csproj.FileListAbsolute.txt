@@ -83,3 +83,4 @@ C:\Users\henry\Documents\GitHub\Euclidesk\Euclidesk\obj\Debug\Euclidesk.csprojAs
 C:\Users\henry\Documents\GitHub\Euclidesk\Euclidesk\obj\Debug\Euclidesk.csproj.CopyComplete
 C:\Users\henry\Documents\GitHub\Euclidesk\Euclidesk\obj\Debug\Euclidesk.dll
 C:\Users\henry\Documents\GitHub\Euclidesk\Euclidesk\obj\Debug\Euclidesk.pdb
+C:\Users\henry\Documents\GitHub\Euclidesk\Euclidesk\bin\Rotativa.dll
