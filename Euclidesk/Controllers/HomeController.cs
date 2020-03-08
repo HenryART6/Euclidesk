@@ -67,7 +67,7 @@ namespace Euclidesk.Controllers
         public ActionResult Print()
         {
             return new Rotativa.ActionAsPdf("Index")
-            { FileName = "txt.pdf" };
+            { FileName = "Prueba.pdf" };
         }
     }
 }

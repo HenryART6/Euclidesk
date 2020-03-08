@@ -2,18 +2,19 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Euclidesk</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="jumbotron  " style="background-color:#262626;">
+    <h1 class="" >Euclidesk</h1>
+    <p class="lead">Con Euclidesk puedes encontrar de manera facil numeros perfectos dentro de un rango.</p>
+    <p class="lead">Simplemente ingresa un numero de inicio y hasta donde quieres buscar para obtener un listado de numeros perfectos.</p>
+    <p><a href="https://es.wikipedia.org/wiki/Número_perfecto" class="btn btn-lg">¿Que son los numeros perfectos? &raquo;</a></p>
 </div>
 
-<div class="row">
+<div class="row text-muted jumbotron " style="background-color:#262626;">
     <div class="col-md-3 form-horizontal"></div>
     <form action="/Home/Index" method="post">
         <div class="col-md-3 form-horizontal">
             <br />
-            <h5>Digite el rango de numeros que desea analizar</h5>
+            <h5 class="text-muted">Digite el rango de numeros que desea analizar</h5>
             <input type="number" class="form-control" name="pNum" placeholder="Desde" required autofocus>
             <br />
             <input type="number" class="form-control" name="sNum" placeholder="Hasta" required>
