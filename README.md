@@ -5,4 +5,14 @@ Solución que permite determinar los números naturales perfectos en un rango da
 Debes tener NET.Framework 4.8 o superior y visual studio.
 
 # Instalacion
+Descarga el repositorio y abre la carpeta Euclidesk desde el visual studio.
 
+# Costruido con
+visual studio community 2019
+ASP.NET Framework MVC
+
+# Versionado
+Usamos SemVer para el versionado. Para todas las versiones disponibles.
+
+# Autores
+Henry Ramirez - Idea, desarrollo y documentacion.
