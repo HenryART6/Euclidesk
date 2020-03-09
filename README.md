@@ -12,7 +12,7 @@ visual studio community 2019
 ASP.NET Framework MVC
 
 # Versionado
-Usamos SemVer para el versionado. Para todas las versiones disponibles.
+Se uso SemVer para el versionado. Para todas las versiones disponibles.
 
 # Autores
 Henry Ramirez - Idea, desarrollo y documentacion.
